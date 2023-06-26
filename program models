@@ -1,0 +1,27 @@
+const mongoose = require("mongoose");
+
+const programDetails = mongoose.Schema({
+    
+        name: { type: String, required: true,},
+
+        sectionData: {
+            type: String,
+            required: true,
+          },
+        
+        programData: {
+            type: String,
+            required: true,
+          },
+        contestentData: {
+            type: String,
+            required: true,
+          },
+           detailsData: {
+        type: String,
+        required: true },
+    
+     },
+  {timestamps : true},)
+
+module.exports = mongoose.model("programdetails", programDetails);
